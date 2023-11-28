@@ -16,6 +16,15 @@ const About: React.FC = () => {
                     nulla rhoncus ultricies. Sed euismod enim eu magna gravida, ut fringilla eros
                     congue.
                 </p>
+                <p className="text-gray-600 font-extralight text-md lg:text-lg xl:text-xl mb-8 ">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem nec
+                    nulla rhoncus ultricies. Sed euismod enim eu magna gravida, ut fringilla eros
+                    congue.
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem nec
+                    nulla rhoncus ultricies. Sed euismod enim eu magna gravida, ut fringilla eros
+                    congue.
+                </p>
             </div>
 
             {/* Photo grid on the right */}
