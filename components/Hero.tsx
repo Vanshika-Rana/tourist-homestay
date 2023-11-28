@@ -17,9 +17,9 @@ const Hero: React.FC<HeroProps> = ({ bgImage }) => {
 		<div
 			className='h-screen w-full bg-cover bg-fixed bg-center bg-no-repeat  '
 			style={backgroundStyle}>
-                <Navbar/>
+               
 			<div
-				className='relative w-full h-[86.8%] lg:h-[86.3%] xl:h-[86.4%] flex flex-col justify-center items-center'
+				className='relative w-full h-screen  flex flex-col justify-center items-center'
 				style={overlayStyle}>
 				<Image
 					src='/images/logo.png'

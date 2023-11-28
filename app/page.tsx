@@ -7,7 +7,7 @@ export default function Home() {
 
 	return (
 		<main>
-			{/* <Navbar /> */}
+			<Navbar />
 			<Hero bgImage="hero-img.jpg" />
 
 			<About />
