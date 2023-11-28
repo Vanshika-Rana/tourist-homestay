@@ -37,7 +37,7 @@ const Rooms: React.FC<RoomsProps> = ({ bgImage }) => {
 			<div
 				className=' w-full min-h-screen flex flex-col lg:flex-col justify-center items-center'
 				style={overlayStyle}>
-				<h2 className='z-10  text-white text-center text-5xl lg:text-7xl xl:text-8xl font-bold  uppercase mt-8'>
+				<h2 className='z-10  text-white text-center text-5xl lg:text-7xl xl:text-8xl font-bold  mt-8'>
 					Available Rooms
 				</h2>
                 <div className="flex flex-col lg:flex-row justify-center items-center mt-12">
@@ -56,9 +56,9 @@ const Rooms: React.FC<RoomsProps> = ({ bgImage }) => {
 							<h3 className='text-3xl font-semibold mb-2'>
 								{room.name}
 							</h3>
-							<p className='text-gray-600 text-xl'>Beds: {room.beds}</p>
-                            <p className='text-gray-600 text-xl'>Type of Bed: {room.bedType}</p>
-                            <p className='text-gray-600 text-xl'>No. of Rooms: {room.num}</p>
+							<p className='text-gray-600 font-extralight text-xl'>Beds: {room.beds}</p>
+                            <p className='text-gray-600 font-extralight text-xl'>Type of Bed: {room.bedType}</p>
+                            <p className='text-gray-600 font-extralight text-xl'>No. of Rooms: {room.num}</p>
 						</div>
 					</div>
 				))}
