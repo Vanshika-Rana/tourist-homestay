@@ -32,7 +32,7 @@ const Rooms: React.FC<RoomsProps> = ({ bgImage }) => {
 	};
 	return (
 		<div
-			className='min-h-screen w-full bg-cover bg-fixed bg-center bg-no-repeat  '
+			className='min-h-screen w-full bg-cover mt-12 bg-fixed bg-center bg-no-repeat  '
 			style={backgroundStyle}>
 			<div
 				className=' w-full min-h-screen flex flex-col lg:flex-col justify-center items-center'
