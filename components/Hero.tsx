@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Image from "next/image";
+import Link from "next/link";
 interface HeroProps {
 	bgImage: string;
 }
@@ -34,9 +35,11 @@ const Hero: React.FC<HeroProps> = ({ bgImage }) => {
 				<p className='z-10 text-white text-lg md:text-xl lg:text-2xl xl:text-3xl font-light mt-2'>
 					Home Away ... From Home
 				</p>
-				<button className='font-bold text-lg mt-8  px-6 py-2 rounded-lg text-white lg:mt-8 transition duration-300 bg-red-400 hover:scale-95 cursor-pointer'>
+                <Link href="/Booking">
+				<button  className='font-bold text-lg mt-8  px-6 py-2 rounded-lg text-white lg:mt-8 transition duration-300 bg-red-400 hover:scale-95 cursor-pointer'>
 					Book Now
 				</button>
+                </Link>
 			</div>
 		</div>
 	);

@@ -11,7 +11,7 @@ export default function Home() {
 		<main>
 			<Navbar />
 			<Hero bgImage='hero-img.jpg' />
-			<About />
+			<About/>
 			<Rooms bgImage='hero-image.jpg' />
       <Services />
       <Footer/>

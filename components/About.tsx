@@ -4,7 +4,7 @@ import { GiHorizonRoad } from "react-icons/gi";
 import { FaHelicopter } from "react-icons/fa";
 const About: React.FC = () => {
 	return (
-		<div className='min-h-screen px-8 lg:px-12 xl:px-16 mt-16 flex flex-col xl:flex-row items-center justify-center w-full'>
+		<div id="about" className='min-h-screen px-8 lg:px-12 xl:px-16 mt-16 flex flex-col xl:flex-row items-center justify-center w-full'>
 			{/* Content on the left */}
 			<div className='w-full '>
 				<h2 className='text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-bold mb-4 text-red-400'>

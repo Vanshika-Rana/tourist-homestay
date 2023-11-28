@@ -31,14 +31,14 @@ const Rooms: React.FC<RoomsProps> = ({ bgImage }) => {
 		backgroundColor: "rgba(0, 0, 0, 0.8)", // Adjust the opacity (0.5) as needed
 	};
 	return (
-		<div
+		<div id="rooms"
 			className='min-h-screen w-full bg-cover mt-12 bg-fixed bg-center bg-no-repeat  '
 			style={backgroundStyle}>
 			<div
 				className=' w-full min-h-screen flex flex-col lg:flex-col justify-center items-center'
 				style={overlayStyle}>
 				<h2 className='z-10  text-white text-center text-5xl lg:text-7xl xl:text-8xl font-bold  mt-8'>
-					Available Rooms
+					Types Of Rooms
 				</h2>
                 <div className="flex flex-col lg:flex-row justify-center items-center mt-12">
 				{roomsData.map((room) => (

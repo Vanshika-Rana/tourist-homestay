@@ -2,7 +2,7 @@ import React from "react";
 import {
 	IoFastFoodOutline,
 	IoWifiOutline,
-	IoAirplaneOutline,
+
 } from "react-icons/io5";
 
 import { GiMountainRoad } from "react-icons/gi";
@@ -28,7 +28,7 @@ const Services: React.FC = () => {
 	];
 
 	return (
-		<div className='border-2  mb-4 '>
+		<div id="services" className='border-2  mb-4 '>
 			<h2 className='z-10 mt-16 text-red-400 text-center text-5xl lg:text-7xl xl:text-8xl font-bold '>
 				Services
 			</h2>
