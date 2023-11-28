@@ -9,26 +9,26 @@ const Rooms: React.FC<RoomsProps> = ({ bgImage }) => {
 	const roomsData = [
 		{
 			id: 1,
-			name: "Standard Room",
+			name: "Deluxe Room",
 			beds: 1,
             bedType: "King Size",
             num: "2",
-			imageUrl: "/images/hero-img.jpg",
+			imageUrl: "/images/room1.jpeg",
 		},
 		{
 			id: 2,
-			name: "Deluxe Room",
+			name: "Family Room",
 			beds: 2,
             bedType:"Queen Size",
             num:"2",
-			imageUrl: "/images/hero-img.jpg",
+			imageUrl: "/images/room2.jpeg",
 		},
 	];
 	const backgroundStyle = {
 		backgroundImage: `url(/images/${bgImage})`, // Adjust the path accordingly
 	};
 	const overlayStyle = {
-		backgroundColor: "rgba(0, 0, 0, 0.6)", // Adjust the opacity (0.5) as needed
+		backgroundColor: "rgba(0, 0, 0, 0.8)", // Adjust the opacity (0.5) as needed
 	};
 	return (
 		<div

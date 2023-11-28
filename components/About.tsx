@@ -33,7 +33,7 @@ const About: React.FC = () => {
                     {/* First photo */}
                     <div className="relative mb-4">
                         <Image
-                            src="/images/hero-img.jpg"
+                            src="/images/img1.jpeg"
                             objectFit="cover"
                             alt="Photo 1"
                             className="rounded-md shadow-lg"
@@ -45,7 +45,7 @@ const About: React.FC = () => {
                     {/* Second photo */}
                     <div className="relative mt-4">
                         <Image
-                            src="/images/hero-image.jpg"
+                            src="/images/img2.jpeg"
                       
                             objectFit="cover"
                             alt="Photo 2"
