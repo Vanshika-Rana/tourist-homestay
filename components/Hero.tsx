@@ -35,7 +35,7 @@ const Hero: React.FC<HeroProps> = ({ bgImage }) => {
 					Home Away ... From Home
 				</p>
 				<button className='font-bold text-lg mt-8  px-6 py-2 rounded-lg text-white lg:mt-8 transition duration-300 bg-red-400 hover:scale-95 cursor-pointer'>
-					Book Room
+					Book Now
 				</button>
 			</div>
 		</div>

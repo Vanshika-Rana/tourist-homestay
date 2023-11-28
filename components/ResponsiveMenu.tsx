@@ -33,7 +33,7 @@ const ResponsiveMenu: React.FC<ResponsiveMenuProps> = ({ isMenuOpen }) => {
 					</Link>
 					<Link href='/rooms'>
 						<button className='font-bold text-lg bg-transparent border-2 border-red-400 px-6 py-2 rounded-lg text-gray-800 mt-4 lg:mt-0 transition duration-300 hover:bg-red-400 hover:scale-95 cursor-pointer'>
-							Sign In / Register
+							Book Now
 						</button>
 					</Link>
 				</div>

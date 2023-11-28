@@ -25,13 +25,13 @@ const Footer: React.FC = () => {
                             <div className="mr-4">
                                 <FiPhone size={20} />
                             </div>
-                            <p className="mr-4">+1 123-456-7890</p>
+                            <p className="mr-4">+91 9566076059, +91 7310554723</p>
                         </div>
                         <div className="flex items-center mt-2">
                             <div>
                                 <FiMail size={20} />
                             </div>
-                            <p className="ml-2">info@manodayahomes.com</p>
+                            <p className="ml-2">manodaya.homes@gmail.com</p>
                         </div>
                     </div>
                 </div>

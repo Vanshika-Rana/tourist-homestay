@@ -5,12 +5,14 @@ import {
 	IoAirplaneOutline,
 } from "react-icons/io5";
 
+import { GiMountainRoad } from "react-icons/gi";
+
 const Services: React.FC = () => {
 	// Placeholder data for services
 	const servicesData = [
 		{
 			id: 1,
-			name: "Food",
+			name: "Food & Snacks",
 			icon: <IoFastFoodOutline size={40} />,
 		},
 		{
@@ -20,8 +22,8 @@ const Services: React.FC = () => {
 		},
 		{
 			id: 3,
-			name: "Tours",
-			icon: <IoAirplaneOutline size={40} />,
+			name: "Customized Tours",
+			icon: <GiMountainRoad size={40} />,
 		},
 	];
 
@@ -42,9 +44,7 @@ const Services: React.FC = () => {
 							<h3 className='text-xl font-semibold mb-2'>
 								{service.name}
 							</h3>
-							<p className='text-gray-600'>
-								Lorem ipsum dolor sit amet.
-							</p>
+							
 						</div>
 					</div>
 				))}

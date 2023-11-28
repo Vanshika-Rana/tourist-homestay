@@ -53,12 +53,12 @@ const Rooms: React.FC<RoomsProps> = ({ bgImage }) => {
 							className='w-full object-cover object-center'
 						/>
 						<div className='p-4'>
-							<h3 className='text-3xl font-semibold mb-2'>
+							<h3 className='text-3xl  font-bold mb-2'>
 								{room.name}
 							</h3>
-							<p className='text-gray-600 font-extralight text-xl'>Beds: {room.beds}</p>
-                            <p className='text-gray-600 font-extralight text-xl'>Type of Bed: {room.bedType}</p>
-                            <p className='text-gray-600 font-extralight text-xl'>No. of Rooms: {room.num}</p>
+							<p className='text-gray-600 font-light text-xl'>Beds: {room.beds}</p>
+                            <p className='text-gray-600 font-light text-xl'>Type of Bed: {room.bedType}</p>
+                            <p className='text-gray-600 font-light text-xl'>No. of Rooms: {room.num}</p>
 						</div>
 					</div>
 				))}
