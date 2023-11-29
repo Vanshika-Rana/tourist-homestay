@@ -32,7 +32,7 @@ const ResponsiveMenu: React.FC<ResponsiveMenuProps> = ({ isMenuOpen }) => {
 						</p>
 					</Link>
 
-					<Link href='https://forms.gle/nGEt2a79UuFiAb9L7' target="_blank">
+					<Link href='https://forms.gle/casY6rC2ig4Zugph6' target="_blank">
 						<button className='font-bold text-lg bg-transparent border-2 border-red-400 px-6 py-2 rounded-lg text-gray-800 mt-4 lg:mt-0 transition duration-300 hover:bg-red-400 hover:scale-95 cursor-pointer'>
 							Book Now
 						</button>
