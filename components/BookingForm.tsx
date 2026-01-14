@@ -222,16 +222,16 @@ ${formData.message ? `Message: ${formData.message}` : ""}`
 					</div>
 
 					{/* Booking Form */}
-					<div className='bg-white rounded-xl sm:rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 lg:p-12'>
+					<div className='bg-white rounded-xl sm:rounded-2xl shadow-2xl p-5 sm:p-6 md:p-8 lg:p-12'>
 						<form
 							onSubmit={handleSubmit}
-							className='space-y-4 sm:space-y-6'>
+							className='space-y-5 sm:space-y-6'>
 							{/* Name and Phone */}
-							<div className='grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6'>
+							<div className='grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6'>
 								<div>
 									<label
 										htmlFor='name'
-										className='block text-charcoal-600 font-medium mb-2'>
+										className='block text-charcoal-600 font-medium mb-2.5 text-sm sm:text-base'>
 										Full Name *
 									</label>
 									<input
@@ -240,7 +240,7 @@ ${formData.message ? `Message: ${formData.message}` : ""}`
 										name='name'
 										value={formData.name}
 										onChange={handleChange}
-										className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-sage-400 transition-all ${
+										className={`w-full px-4 py-3.5 sm:py-3 text-base border rounded-lg focus:outline-none focus:ring-2 focus:ring-sage-400 transition-all ${
 											errors.name
 												? "border-red-300"
 												: "border-cream-300"
@@ -248,7 +248,7 @@ ${formData.message ? `Message: ${formData.message}` : ""}`
 										placeholder='Enter your full name'
 									/>
 									{errors.name && (
-										<p className='text-red-500 text-sm mt-1'>
+										<p className='text-red-500 text-xs sm:text-sm mt-1.5'>
 											{errors.name}
 										</p>
 									)}
@@ -256,7 +256,7 @@ ${formData.message ? `Message: ${formData.message}` : ""}`
 								<div>
 									<label
 										htmlFor='phone'
-										className='block text-charcoal-600 font-medium mb-2'>
+										className='block text-charcoal-600 font-medium mb-2.5 text-sm sm:text-base'>
 										Phone Number *
 									</label>
 									<input
@@ -265,7 +265,7 @@ ${formData.message ? `Message: ${formData.message}` : ""}`
 										name='phone'
 										value={formData.phone}
 										onChange={handleChange}
-										className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-sage-400 transition-all ${
+										className={`w-full px-4 py-3.5 sm:py-3 text-base border rounded-lg focus:outline-none focus:ring-2 focus:ring-sage-400 transition-all ${
 											errors.phone
 												? "border-red-300"
 												: "border-cream-300"
@@ -273,7 +273,7 @@ ${formData.message ? `Message: ${formData.message}` : ""}`
 										placeholder='10-digit phone number'
 									/>
 									{errors.phone && (
-										<p className='text-red-500 text-sm mt-1'>
+										<p className='text-red-500 text-xs sm:text-sm mt-1.5'>
 											{errors.phone}
 										</p>
 									)}
@@ -284,7 +284,7 @@ ${formData.message ? `Message: ${formData.message}` : ""}`
 							<div>
 								<label
 									htmlFor='email'
-									className='block text-charcoal-600 font-medium mb-2'>
+									className='block text-charcoal-600 font-medium mb-2.5 text-sm sm:text-base'>
 									Email Address *
 								</label>
 								<input
@@ -293,7 +293,7 @@ ${formData.message ? `Message: ${formData.message}` : ""}`
 									name='email'
 									value={formData.email}
 									onChange={handleChange}
-									className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-sage-400 transition-all ${
+									className={`w-full px-4 py-3.5 sm:py-3 text-base border rounded-lg focus:outline-none focus:ring-2 focus:ring-sage-400 transition-all ${
 										errors.email
 											? "border-red-300"
 											: "border-cream-300"
@@ -301,19 +301,19 @@ ${formData.message ? `Message: ${formData.message}` : ""}`
 									placeholder='your.email@example.com'
 								/>
 								{errors.email && (
-									<p className='text-red-500 text-sm mt-1'>
+									<p className='text-red-500 text-xs sm:text-sm mt-1.5'>
 										{errors.email}
 									</p>
 								)}
 							</div>
 
 							{/* Check-in and Check-out */}
-							<div className='grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6'>
+							<div className='grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6'>
 								<div>
 									<label
 										htmlFor='checkIn'
-										className='block text-charcoal-600 font-medium mb-2'>
-										<FiCalendar className='inline mr-2' />
+										className='block text-charcoal-600 font-medium mb-2.5 text-sm sm:text-base'>
+										<FiCalendar className='inline mr-2 w-4 h-4 sm:w-5 sm:h-5' />
 										Check-in Date *
 									</label>
 									<input
@@ -327,14 +327,14 @@ ${formData.message ? `Message: ${formData.message}` : ""}`
 												.toISOString()
 												.split("T")[0]
 										}
-										className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-sage-400 transition-all ${
+										className={`w-full px-4 py-3.5 sm:py-3 text-base border rounded-lg focus:outline-none focus:ring-2 focus:ring-sage-400 transition-all ${
 											errors.checkIn
 												? "border-red-300"
 												: "border-cream-300"
 										}`}
 									/>
 									{errors.checkIn && (
-										<p className='text-red-500 text-sm mt-1'>
+										<p className='text-red-500 text-xs sm:text-sm mt-1.5'>
 											{errors.checkIn}
 										</p>
 									)}
@@ -342,8 +342,8 @@ ${formData.message ? `Message: ${formData.message}` : ""}`
 								<div>
 									<label
 										htmlFor='checkOut'
-										className='block text-charcoal-600 font-medium mb-2'>
-										<FiCalendar className='inline mr-2' />
+										className='block text-charcoal-600 font-medium mb-2.5 text-sm sm:text-base'>
+										<FiCalendar className='inline mr-2 w-4 h-4 sm:w-5 sm:h-5' />
 										Check-out Date *
 									</label>
 									<input
@@ -358,14 +358,14 @@ ${formData.message ? `Message: ${formData.message}` : ""}`
 												.toISOString()
 												.split("T")[0]
 										}
-										className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-sage-400 transition-all ${
+										className={`w-full px-4 py-3.5 sm:py-3 text-base border rounded-lg focus:outline-none focus:ring-2 focus:ring-sage-400 transition-all ${
 											errors.checkOut
 												? "border-red-300"
 												: "border-cream-300"
 										}`}
 									/>
 									{errors.checkOut && (
-										<p className='text-red-500 text-sm mt-1'>
+										<p className='text-red-500 text-xs sm:text-sm mt-1.5'>
 											{errors.checkOut}
 										</p>
 									)}
@@ -373,12 +373,12 @@ ${formData.message ? `Message: ${formData.message}` : ""}`
 							</div>
 
 							{/* Guests and Room Type */}
-							<div className='grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6'>
+							<div className='grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6'>
 								<div>
 									<label
 										htmlFor='guests'
-										className='block text-charcoal-600 font-medium mb-2'>
-										<FiUsers className='inline mr-2' />
+										className='block text-charcoal-600 font-medium mb-2.5 text-sm sm:text-base'>
+										<FiUsers className='inline mr-2 w-4 h-4 sm:w-5 sm:h-5' />
 										Number of Guests *
 									</label>
 									<input
@@ -389,7 +389,7 @@ ${formData.message ? `Message: ${formData.message}` : ""}`
 										onChange={handleChange}
 										min='1'
 										max='10'
-										className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-sage-400 transition-all ${
+										className={`w-full px-4 py-3.5 sm:py-3 text-base border rounded-lg focus:outline-none focus:ring-2 focus:ring-sage-400 transition-all ${
 											errors.guests
 												? "border-red-300"
 												: "border-cream-300"
@@ -397,7 +397,7 @@ ${formData.message ? `Message: ${formData.message}` : ""}`
 										placeholder='Number of guests'
 									/>
 									{errors.guests && (
-										<p className='text-red-500 text-sm mt-1'>
+										<p className='text-red-500 text-xs sm:text-sm mt-1.5'>
 											{errors.guests}
 										</p>
 									)}
@@ -405,7 +405,7 @@ ${formData.message ? `Message: ${formData.message}` : ""}`
 								<div>
 									<label
 										htmlFor='roomType'
-										className='block text-charcoal-600 font-medium mb-2'>
+										className='block text-charcoal-600 font-medium mb-2.5 text-sm sm:text-base'>
 										Room Type
 									</label>
 									<select
@@ -413,7 +413,7 @@ ${formData.message ? `Message: ${formData.message}` : ""}`
 										name='roomType'
 										value={formData.roomType}
 										onChange={handleChange}
-										className='w-full px-4 py-3 border border-cream-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sage-400 transition-all'>
+										className='w-full px-4 py-3.5 sm:py-3 text-base border border-cream-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sage-400 transition-all'>
 										<option value=''>
 											Select room type
 										</option>
@@ -431,7 +431,7 @@ ${formData.message ? `Message: ${formData.message}` : ""}`
 							<div>
 								<label
 									htmlFor='message'
-									className='block text-charcoal-600 font-medium mb-2'>
+									className='block text-charcoal-600 font-medium mb-2.5 text-sm sm:text-base'>
 									Additional Message / Special Requirements
 								</label>
 								<textarea
@@ -440,16 +440,16 @@ ${formData.message ? `Message: ${formData.message}` : ""}`
 									value={formData.message}
 									onChange={handleChange}
 									rows={4}
-									className='w-full px-4 py-3 border border-cream-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sage-400 transition-all resize-none'
+									className='w-full px-4 py-3.5 sm:py-3 text-base border border-cream-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sage-400 transition-all resize-none'
 									placeholder='Any special requirements or questions...'
 								/>
 							</div>
 
 							{/* Submit Button */}
-							<div className='flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4'>
+							<div className='flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2'>
 								<button
 									type='submit'
-									className='flex-1 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-charcoal-500 bg-gold-400 hover:bg-gold-500 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105'>
+									className='flex-1 px-6 sm:px-8 py-3.5 sm:py-4 text-base sm:text-lg font-medium text-charcoal-500 bg-gold-400 hover:bg-gold-500 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 active:scale-95'>
 									Submit via WhatsApp
 								</button>
 								<a
@@ -472,7 +472,7 @@ ${formData.message ? `Message: ${formData.message}` : ""}`
 											formData.roomType || ""
 										}\nMessage: ${formData.message || ""}`
 									)}`}
-									className='px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium text-white bg-sage-500 hover:bg-sage-600 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 text-center'>
+									className='px-6 sm:px-8 py-3.5 sm:py-4 text-base sm:text-lg font-medium text-white bg-sage-500 hover:bg-sage-600 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 text-center active:scale-95'>
 									Or Send Email
 								</a>
 							</div>
