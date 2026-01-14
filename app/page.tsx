@@ -1,20 +1,25 @@
 import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Image from "next/image";
-import Navbar from "@/components/Navbar";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import PerfectPlace from "@/components/PerfectPlace";
 import Rooms from "@/components/Rooms";
-import Services from "@/components/Services";
+import Dining from "@/components/Dining";
+import Video from "@/components/Video";
+import Testimonials from "@/components/Testimonials";
+import BookingForm from "@/components/BookingForm";
 import Footer from "@/components/Footer";
 
 export default function Home() {
 	return (
-		<main>
-			<Navbar />
-			<Hero bgImage='hero-img.jpg' />
-			<About/>
-			<Rooms bgImage='hero-image.jpg' />
-      <Services />
-      <Footer/>
+		<main className='overflow-x-hidden' role='main'>
+			<Hero bgImage='hero-img.png' />
+			<WhyChooseUs />
+			<PerfectPlace />
+			<Rooms />
+			<Dining />
+			<Video />
+			{/* <Testimonials /> */}
+			<BookingForm />
+			<Footer />
 		</main>
 	);
 }
