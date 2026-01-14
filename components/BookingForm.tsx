@@ -103,7 +103,7 @@ ${formData.message ? `Message: ${formData.message}` : ""}`
 		return { subject, body };
 	};
 
-	const handleSubmit = (e: React.FormEvent) => {
+	const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 
 		if (!validateForm()) {

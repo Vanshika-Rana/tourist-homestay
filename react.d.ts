@@ -21,19 +21,32 @@ declare module 'react' {
   
   // Event types
   export interface ChangeEvent<T = HTMLInputElement> extends SyntheticEvent<T> {
-    target: T;
+    target: EventTarget & T;
   }
   
   export interface FormEvent<T = HTMLFormElement> extends SyntheticEvent<T> {
-    target: T;
+    target: EventTarget;
+    currentTarget: EventTarget & T;
   }
   
-  export interface SyntheticEvent<T = Element> {
-    currentTarget: T;
-    target: T;
+  export interface SyntheticEvent<T = Element, E = Event> {
+    currentTarget: EventTarget & T;
+    target: EventTarget;
     preventDefault(): void;
     stopPropagation(): void;
+    nativeEvent: E;
+    bubbles: boolean;
+    cancelable: boolean;
+    defaultPrevented: boolean;
+    eventPhase: number;
+    isTrusted: boolean;
+    timeStamp: number;
+    type: string;
   }
+  
+  // Event handler types
+  export type FormEventHandler<T = HTMLFormElement> = (event: FormEvent<T>) => void;
+  export type ChangeEventHandler<T = HTMLInputElement> = (event: ChangeEvent<T>) => void;
   
   // Component types
   export interface Component<P = {}, S = {}> {
